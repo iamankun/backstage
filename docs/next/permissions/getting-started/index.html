@@ -25,7 +25,7 @@
 <script src="/js/medium-zoom.js"></script>
 <script src="/js/dismissable-banner.js"></script>
 <script src="/js/scroll-nav-to-view-in-docs.js"></script><link rel="stylesheet" href="/assets/css/styles.7121b71d.css">
-<script src="/assets/js/runtime~main.864dbd34.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e0a08562.js" defer="defer"></script>
 <script src="/assets/js/main.c1481b1b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -74,7 +74,7 @@
 <div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#232323"><div class="codeBlockTitle_Ktv7">app-config.yaml</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#232323"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token key atrule">permission</span><span class="token punctuation" style="color:rgb(212, 212, 212)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  </span><span class="token key atrule">enabled</span><span class="token punctuation" style="color:rgb(212, 212, 212)">:</span><span class="token plain"> </span><span class="token boolean important">true</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>
-<p>Now run <code>yarn dev</code>, Backstage should load up in your browser</p>
+<p>Now run <code>yarn start</code>, Backstage should load up in your browser</p>
 </li>
 <li>
 <p>You should see that you have entities in your Catalog, pretty simple</p>
@@ -83,7 +83,7 @@
 <p>Let&#x27;s change this line in our Test Permission Policy <code>return { result: AuthorizeResult.ALLOW };</code> to be <code>return { result: AuthorizeResult.DENY };</code></p>
 </li>
 <li>
-<p>Run <code>yarn dev</code> once again, Backstage should load up in your browser</p>
+<p>Run <code>yarn start</code> once again, Backstage should load up in your browser</p>
 </li>
 <li>
 <p>This time you should not see any entities in your Catalog, if you do then something went wrong along the way and you&#x27;ll need to review the steps above</p>
