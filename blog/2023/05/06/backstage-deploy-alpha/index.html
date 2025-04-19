@@ -25,7 +25,7 @@
 <script src="/js/medium-zoom.js"></script>
 <script src="/js/dismissable-banner.js"></script>
 <script src="/js/scroll-nav-to-view-in-docs.js"></script><link rel="stylesheet" href="/assets/css/styles.7121b71d.css">
-<script src="/assets/js/runtime~main.5ffc1028.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.40dc4b49.js" defer="defer"></script>
 <script src="/assets/js/main.31f7c5b2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -42,7 +42,7 @@
 <li>Should the POC be deployed on Kubernetes?</li>
 <li>How do you deploy the POC on my cloud provider?</li>
 </ul>
-<p>To address these questions and reduce friction from deploying a POC, we built a <a href="https://github.com/backstage/backstage-deploy" target="_blank" rel="noopener noreferrer">new CLI</a>. The CLI is simply called <code>deploy</code> and is invokable with <code>npx</code>. With this new CLI, you can generate a Dockerfile and deploy a Backstage instance onto a preferred cloud provider. While the package’s infrastructure is built to support all cloud providers, currently the CLI only offers an AWS implementation. In the future, we plan to add additional cloud providers to the package and <a href="https://github.com/backstage/backstage/blob/6996b3338d678efc03307112524060e9dc2ad769/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">welcome any contributions</a> extending the suite of cloud provider implementations!</p>
+<p>To address these questions and reduce friction from deploying a POC, we built a <a href="https://github.com/backstage/backstage-deploy" target="_blank" rel="noopener noreferrer">new CLI</a>. The CLI is simply called <code>deploy</code> and is invocable with <code>npx</code>. With this new CLI, you can generate a Dockerfile and deploy a Backstage instance onto a preferred cloud provider. While the package’s infrastructure is built to support all cloud providers, currently the CLI only offers an AWS implementation. In the future, we plan to add additional cloud providers to the package and <a href="https://github.com/backstage/backstage/blob/6996b3338d678efc03307112524060e9dc2ad769/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">welcome any contributions</a> extending the suite of cloud provider implementations!</p>
 <p><strong>So, what about Kubernetes?</strong> Since the CLI is designed specifically for the POC phase, we believe that Kubernetes isn’t the right fit – as Kubernetes is better suited for production workloads. So, we explored lightweight, container-based solutions, and landed on <a href="https://docs.aws.amazon.com/lightsail/index.html" target="_blank" rel="noopener noreferrer">Amazon Lightsail</a> as a hosting service for the POC.
 Amazon Lightsail supports <a href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-container-services" target="_blank" rel="noopener noreferrer">lightweight container</a> deployments <a href="https://aws.amazon.com/lightsail/pricing/" target="_blank" rel="noopener noreferrer">at a low cost</a>, and has a <a href="https://aws.amazon.com/lightsail/pricing/?loc=ft#AWS_Free_Tier" target="_blank" rel="noopener noreferrer">free trial for new users</a>! Given Lightsail’s ease of use and affordability, we recommend using Lightsail over Kubernetes to test out your Backstage POC.</p>
 <p>With the Dockerfile and Kubernetes questions answered, we just have to address how to actually deploy the POC. And that is where the new CLI comes in.</p>
