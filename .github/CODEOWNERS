@@ -23,7 +23,6 @@ yarn.lock                                         @backstage/maintainers @backst
 /docs/plugins/integrating-search-into-plugins.md  @backstage/search-maintainers
 /docs/releases                                    @backstage/operations-maintainers
 /docs/tooling                                     @backstage/tooling-maintainers
-/microsite                                        @backstage/microsite-maintainers
 /packages                                         @backstage/framework-maintainers
 /packages/backend-openapi-utils                   @backstage/maintainers @backstage/reviewers @backstage/openapi-tooling-maintainers
 /packages/canon                                   @backstage/design-system-maintainers
