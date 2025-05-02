@@ -1,5 +1,11 @@
 # @backstage/canon
 
+## 0.4.0-next.2
+
+### Patch Changes
+
+- 97b25a1: Pin version of @base-ui-components/react.
+
 ## 0.4.0-next.1
 
 ### Minor Changes
